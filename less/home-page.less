@@ -1,4 +1,12 @@
 .home {
+  
+  header{
+    border-bottom: 2px dashed grey;
+    padding-bottom: 10px;
+    h2{
+      margin-top: 21px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -56,6 +64,50 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      p{
+        margin-bottom: 4px;
+      }
+      .btn{
+        .button(white, teal, 15px, 1.8rem);
+      }
+    }
+  }
+  @media @mobile{
+    width: 90%;
+    .content-section{
+      .text-content, .img-content{
+        width: 100%;
+        padding: 0;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .inverse-content{
+      .flexbox(flex-start, unset, column-reverse, wrap);
+      .img-content{
+        padding: 0;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .content-destination{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .content-pick{
+      margin-top: 30px;
+      .flexbox(space-between, center, column, wrap);
+      .destination{
+        width: 80%;
+        p{
+          margin-bottom: 2px;
+        }
+        .btn{
+          width: 100%;
+        }
+      }
     }
   }
 }// home
